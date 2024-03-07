@@ -1,0 +1,50 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+body {
+  text-align: center;
+  font-family: "Madimi One";
+}
+
+#restartBtn {
+  margin-bottom: 50px;
+}
+
+.gameBox {
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.gameBox section {
+  width: 150px;
+  height: 150px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 100px;
+  line-height: 100px;
+  padding-top: 20px;
+  
+}
+
+section:nth-child(3n){
+  border-right: none;
+}
+
+section:nth-child(n+7):nth-child(-n+9) {
+  border-bottom: none;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
